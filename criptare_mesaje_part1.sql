@@ -55,7 +55,7 @@ as
 begin
 
     if p_id_expeditor = p_id_destinatar then
-        raise_application_error(-20001, 'Nu po?i trimite un mesaj cãtre tine însu?i!');
+        raise_application_error(-20001, 'Nu po?i trimite un mesaj cï¿½tre tine ï¿½nsu?i!');
     end if;
     v_mesaj_raw := utl_raw.cast_to_raw(mesaj);
     
@@ -68,5 +68,7 @@ begin
     values (mesaje_id.nextval, p_id_expeditor, p_id_destinatar,v_encrypt,sysdate);
         
 end;
+
+
 
 
